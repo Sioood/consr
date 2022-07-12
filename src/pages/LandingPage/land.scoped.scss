@@ -1,0 +1,154 @@
+@import "../../scss/utils";
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $--nav-height;
+  background: var($--main-color);
+  border-bottom: 0.1rem solid var($--third-color);
+  z-index: 666;
+  .nav__links {
+    width: 100vw;
+    height: 100%;
+    @extend %flex-space-between;
+    flex-direction: row;
+    &__link {
+      height: 100%;
+      // padding: 0 1rem;
+      @extend %flex-space-between;
+      // border-right: 0.1rem solid var($--secondary-color);
+      &--square {
+        width: 6.7758rem;
+        height: $--nav-height;
+        font-size: 3rem;
+        border-right: none;
+      }
+      h5 {
+        font-family: $first-font;
+      }
+      & > * {
+        padding: 0 1rem;
+        height: 100%;
+        @extend %flex-center;
+        font-weight: 600;
+        border: 0.1rem solid var($--third-color);
+        border-top: none;
+        transition: all 0.3s ease;
+        &:hover {
+          border: 0.1rem solid var($--secondary-color);
+          border-top: none;
+        }
+      }
+      &--no-border-left {
+        border-left: none;
+        &:hover {
+          border-left: none;
+        }
+      }
+      &--no-border-right {
+        border-right: none;
+        &:hover {
+          border-right: none;
+        }
+      }
+      & > a {
+        width: 100%;
+      }
+      &:nth-child(odd) {
+        width: 35%;
+      }
+      &:nth-child(even) {
+        width: 30%;
+      }
+    }
+  }
+}
+
+main {
+  padding-top: $--nav-height;
+  width: 100vw;
+  // padding: 1rem;
+  @extend %flex-space-between;
+}
+
+.discover {
+  position: fixed;
+  bottom: $--nav-height;
+  right: 12rem;
+  z-index: 1;
+  &--hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 6rem;
+  width: auto;
+  display: inline-flex;
+}
+
+.img {
+  width: 100vw;
+  height: calc(100vh - 6rem);
+  @extend %flex-center;
+  align-items: flex-start;
+  transition: all 2s ease;
+  overflow: hidden;
+  & > img {
+    width: 100vw;
+    height: calc(100vh - 6rem);
+    object-position: left;
+    object-fit: none;
+  }
+  &--active {
+    width: 35vw;
+  }
+}
+
+.content {
+  position: relative;
+  padding: 5rem;
+  width: 65vw;
+  height: calc(100vh - 6rem);
+  // background-color: #beff99;
+  // background-image: radial-gradient(
+  //     at 65% 42%,
+  //     hsla(12, 92%, 67%, 1) 0px,
+  //     transparent 50%
+  //   ),
+  //   radial-gradient(at 97% 39%, hsla(168, 78%, 76%, 1) 0px, transparent 50%),
+  //   radial-gradient(at 54% 88%, hsla(131, 70%, 69%, 1) 0px, transparent 50%),
+  //   radial-gradient(at 8% 90%, hsla(296, 87%, 78%, 1) 0px, transparent 50%),
+  //   radial-gradient(at 88% 12%, hsla(299, 67%, 75%, 1) 0px, transparent 50%),
+  //   radial-gradient(at 88% 77%, hsla(228, 62%, 69%, 1) 0px, transparent 50%),
+  //   radial-gradient(at 97% 96%, hsla(329, 96%, 69%, 1) 0px, transparent 50%);
+
+  background-color: #99b9ff;
+  background-image: radial-gradient(
+      at 25% 67%,
+      hsla(269, 100%, 61%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 20% 87%, hsla(151, 100%, 69%, 1) 0px, transparent 50%),
+    radial-gradient(at 37% 66%, hsla(276, 100%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 70% 49%, hsla(176, 100%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 24% 52%, hsla(34, 100%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 64% 20%, hsla(81, 100%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 95% 1%, hsla(224, 100%, 79%, 1) 0px, transparent 50%);
+  &__title {
+    font-family: $first-font;
+    font-weight: 800;
+  }
+  &__text {
+    color: var($--main-color);
+  }
+  &__cta {
+    position: absolute !important;
+    bottom: 6rem !important;
+    right: 6rem !important;
+  }
+}

@@ -1,12 +1,14 @@
 @import "./base/fonts";
 @import "./base/reset";
-@import "./utils/placeholder";
-@import "./utils/variables";
-@import "./utils/mixins";
+@import "./utils";
+
+@import "./components/buttons.scss";
+
+
 
 :root {
   font-size: 16px;
-  font-family: $kyiv;
+  font-family: $first-font;
   font-variant-ligatures: common-ligatures; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -89,7 +91,7 @@ html {
 h1 {
   // font-size: 5.378rem;
   font-size: $--font-size-h1;
-  font-family: $kyiv-title;
+  font-family: $first-font;
 }
 
 h2 {

@@ -1,0 +1,18 @@
+@import "../utils";
+
+button,
+.button {
+  all: unset;
+  padding: 1rem 2rem;
+  background: var($--main-color);
+  border: 0.1rem solid var($--third-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    border: 0.1rem solid var($--secondary-color);
+  }
+  &--second {
+    background: var($--third-color);
+    // border: 0.1rem solid var($--main-color);
+  }
+}
