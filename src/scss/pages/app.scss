@@ -1,0 +1,54 @@
+@import "../utils";
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $--nav-height;
+  background: var($--main-color);
+  border-bottom: 0.1rem solid var($--secondary-color);
+  z-index: 666;
+  .nav__links {
+    width: 100vw;
+    height: 100%;
+    @extend %flex-space-between;
+    flex-direction: row;
+    &__link {
+      height: 100%;
+      // padding: 0 1rem;
+      @extend %flex-space-between;
+      // border-right: 0.1rem solid var($--secondary-color);
+      &--square {
+        width: $--nav-height;
+        border-right: none;
+      }
+      h5 {
+        font-family: $kyiv-title;
+      }
+      & > * {
+        padding: 0 1rem;
+        height: 100%;
+        @extend %flex-center;
+        border-right: 0.1rem solid var($--secondary-color);
+      }
+      &--no-border{
+        border-right: none;
+      }
+      & > a {
+        width: 100%;
+      }
+      &:nth-child(odd) {
+        width: 35%;
+      }
+      &:nth-child(even) {
+        width: 30%;
+      }
+    }
+  }
+}

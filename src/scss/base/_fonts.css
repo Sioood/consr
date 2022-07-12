@@ -1,0 +1,142 @@
+/* -------------------------------------------------------------------------- */
+/*                                 sans serif                                 */
+/* -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "Kyiv";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/sans/KyivTypeSans-Light3.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Kyiv";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/sans/KyivTypeSans-Regular3.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Kyiv";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/sans/KyivTypeSans-Medium3.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kyiv";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/sans/KyivTypeSans-Bold3.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kyiv";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/sans/KyivTypeSans-Heavy3.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Kyiv";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/sans/KyivTypeSans-Black3.ttf") format("truetype");
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    serif                                   */
+/* -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "Kyiv-serif";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/serif/KyivTypeSerif-Light3.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Kyiv-serif";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/serif/KyivTypeSerif-Regular3.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Kyiv-serif";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/serif/KyivTypeSerif-Medium3.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kyiv-serif";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/serif/KyivTypeSerif-Bold3.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kyiv-serif";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/serif/KyivTypeSerif-Heavy3.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Kyiv-serif";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/serif/KyivTypeSerif-Black3.ttf") format("truetype");
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    title                                   */
+/* -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "Kyiv-title";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/titling/KyivTypeTitling-Light3.ttf")
+      format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Kyiv-title";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/titling/KyivTypeTitling-Regular3.ttf")
+      format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Kyiv-title";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/titling/KyivTypeTitling-Medium3.ttf")
+      format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kyiv-title";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/titling/KyivTypeTitling-Bold3.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kyiv-title";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/titling/KyivTypeTitling-Heavy3.ttf")
+      format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Kyiv-title";
+  src: local("Siod"),
+    url("../../fonts/Kyiv/titling/KyivTypeTitling-Black3.ttf")
+      format("truetype");
+  font-weight: 600;
+}

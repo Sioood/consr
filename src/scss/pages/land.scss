@@ -1,0 +1,61 @@
+@import "../utils";
+
+main {
+  padding-top: $--nav-height;
+  width: 100vw;
+  // padding: 1rem;
+  @extend %flex-space-between;
+}
+
+.discover {
+  all: unset;
+  position: fixed;
+  bottom: $--nav-height;
+  right: 12rem;
+  padding: 1rem 2rem;
+  background: var($--main-color);
+  border: 0.1rem solid var($--secondary-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+  &--hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 6rem;
+  width: auto;
+  display: inline-flex;
+}
+
+.img {
+  width: 100vw;
+  height: calc(100vh - 6rem);
+  @extend %flex-center;
+  align-items: flex-start;
+  transition: all 2s ease;
+  overflow: hidden;
+  & > img {
+    width: 100vw;
+    height: calc(100vh - 6rem);
+    object-position: left;
+    object-fit: none;
+  }
+  &--active {
+    width: 35vw;
+  }
+}
+
+.content {
+  padding: 5rem;
+  width: 65vw;
+  height: 100%;
+  &__title {
+    color: var($--secondary-color);
+    font-family: $kyiv-title;
+    font-weight: 400;
+  }
+}

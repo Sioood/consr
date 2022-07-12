@@ -1,0 +1,57 @@
+// colors
+
+@import "./mixins";
+
+$--main-color: --main-color;
+$--secondary-color: --secondary-color;
+$--accent-color: --accent-color;
+
+/**
+ * Main theme
+ */
+
+$theme-map-dark: (
+  $--main-color: #131313,
+  $--secondary-color: #fff,
+  $--accent-color: #e63b3b,
+);
+
+/**
+ * Second theme -> Light
+ */
+
+$theme-map-light: (
+  $--main-color: #fff,
+  $--secondary-color: #000,
+  $--accent-color: #e63b3b,
+);
+
+
+// fonts
+// first font
+
+$kyiv: "Kyiv";
+$kyiv-serif: "Kyiv-serif";
+$kyiv-title: "Kyiv-title";
+
+/**
+ * font size
+ */
+
+$--font-size-h1: clamp(2.406rem, 6vw, 5.378rem);
+
+$--font-size-h2: clamp(2.019rem, 5.5vw, 3.842rem);
+
+$--font-size-h3: clamp(1.694rem, 5vw, 2.744rem);
+
+$--font-size-h4: clamp(1.421rem, 3vw, 1.96rem);
+
+$--font-size-h5: clamp(1.192rem, 2vw, 1.4rem);
+
+$--font-size-h6: 1rem;
+
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+
+$--nav-height: 6rem;

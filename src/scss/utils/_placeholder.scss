@@ -1,0 +1,37 @@
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flex-space-evenly{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+// mixin ?
+%pos-absolute-center {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+%pos-absolute-top-center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+%pos-fixed-top-center {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
